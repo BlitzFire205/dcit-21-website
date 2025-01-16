@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.cdnfonts.com/css/elianto" rel="stylesheet">
+
+    		<!-- External CSS -->
+		<link rel="stylesheet" type="text/css" href="./style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website of Moeses Dale G. Ayran</title>
+    <style>
+        body {
+            font-family: elianto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: white;
+            background: url(images/BodyBackground.jpg);
+        }
+        header {
+            background-color: #a30000;
+            color: white;
+            padding: 1rem 0;
+            background: url(images/NameBackground.jpg);
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+    <script>
+        function showContent(tabId) {
+            const sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Personal Website of Moeses Dale G. Ayran</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showContent('myself')">Myself</a>
+        <a href="https://drive.google.com/file/d/1sNEmZ9J6lC_NZtoA38ru67_NJTD1ZuEN/view?usp=sharing" target="_blank">My Resume</a>
+        <a href="#" onclick="showContent('family')">My Family</a>
+        <a href="#" onclick="showContent('favorites')">My Favorites</a>
+        <a href="#" onclick="showContent('socials')">My Socials</a>
+    </nav>
+
+    <div class="container-fluid">
+    <section id="myself" class="content active">
+        <h2>Myself</h2>
+            <img src="images/me.jpg" id="profile">
+            <h3 style="color: #ca0000;">About Me</h3>
+            <p>Name: Moeses Dale G. Ayran</p>
+            <p>Age: 18</p>
+            <p>Birthday: July 25 2006</p>
+            <p>Address: Lola Neneng Street, Binakayan, Kawit, Cavite</p>
+            <p>&nbsp;</p>
+            <h3 style="color: #ca0000;">Likes</h3>
+            <p>Marvel</p>
+            <p>Wrestling</p>
+            <p>Cars</p>
+            <p>Rap Music</p>
+            <p>&nbsp;</p>
+            <h3 style="color: #ca0000;">Dislikes</h3>
+            <p>Samonte</p>
+    </section>
+    </div>
+
+    <section id="family" class="content">
+        <h2>My Family</h2>
+        <h3 style="color: #ca0000;">Father</h3>
+        <p>Name: Arnold P. Ayran</p>
+        <p>Age: 62</p>
+        <p>Occupation: Car Jockey at Nissan Alabang</p>
+        <p>&nbsp;</p>
+        <h3 style="color: #ca0000;">Mother</h3>
+        <p>Name: Anna G. Ayran</p>
+        <p>Age: 48</p>
+        <p>Occupation: Housewife</p>
+    </section>
+
+    <div class="container-fluid">
+    <section id="favorites" class="content">
+        <h2>My Favorites</h2>
+        <h3 style="color: #ca0000;">Movies</h3>
+        <div class="row">
+            <div class="column1">
+              <img src="images/NWH.jpeg" alt="NWH" style="width:50%">
+            </div>
+            <div class="column1">
+              <img src="images/DP&W.jpg" alt="DP&W" style="width:50%">
+            </div>
+            <div class="column1">
+              <img src="images/Endgame.jpg" alt="Endgame" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/GotG3.jpg" alt="GotG3" style="width:50%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column1">
+                <img src="images/Uncle Drew.png" alt="Uncle Drew" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/8 Mile.jpg" alt="8 Mile" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/F&F Tokyo.jpg" alt="The Fast and The Furious: Tokyo Drift" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/Real Steel.jpg" alt="Real Steel" style="width:50%">
+            </div>
+          </div>  
+          <div class="row">
+            <div class="column1">
+                <img src="images/Ford v Ferrari.png" alt="Ford v Ferrari" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/Karate Kid 2010.jpg" alt="The Karate Kid" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/Nacho Libre.jpg" alt="Nacho Libre" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/CJ7.jpg" alt="CJ7" style="width:50%">
+            </div>
+          </div>
+
+        <h3 style="color: #ca0000;">Video Games</h3>
+        <div class="row">
+            <div class="column">
+              <img src="images/AC2.png" alt="AC2" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/ACBrotherhood.png" alt="ACBrotherhood" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/ACRevelations.png" alt="ACRevelations" style="width:50%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/ACIII.jpg" alt="ACIII" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/ACIV.jpg" alt="ACIV" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/NFSMW.jpg" alt="NFSMW" style="width:50%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/GTASA.jpg" alt="GTASA" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/GTAIV.png" alt="GTAIV" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/LEGOMARVEL.jpg" alt="Lego Marvel Superheroes" style="width:50%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img src="images/MKXL.png" alt="MKXL" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/PWAAT.png" alt="PWAAT" style="width:50%">
+            </div>
+            <div class="column">
+              <img src="images/MINECRAFT.jpg" alt="MINECRAFT" style="width:50%">
+            </div>
+          </div>
+
+        <h3 style="color: #ca0000;">Shows</h3>
+        <div class="row">
+            <div class="column1">
+              <img src="images/ATLA.jpg" alt="Avatar The Last Airbender" style="width:50%">
+            </div>
+            <div class="column1">
+              <img src="images/Cells At Work.png" alt="Cells At Work" style="width:50%">
+            </div>
+            <div class="column1">
+              <img src="images/Death Note.jpg" alt="Death Note" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/INITIAL D.png" alt="Initial D" style="width:50%">
+            </div>
+          </div>
+          <div class="row">
+            <div class="column1">
+                <img src="images/LOKI.png" alt="Loki" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/MOON KNIGHT.jpg" alt="Moon Knight" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/MAWS.png" alt="My Adventures with Superman" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/MDUD.png" alt="My Dress-Up Darling" style="width:50%">
+            </div>
+          </div>  
+          <div class="row">
+            <div class="column1">
+                <img src="images/Oshi No Ko.png" alt="Oshi No Ko style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/Pacififc Rim The Black.jpg" alt="Pacific Rim: The Black" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/SPY X FAMILY.png" alt="SPY X FAMILY" style="width:50%">
+            </div>
+            <div class="column1">
+                <img src="images/Yu-Gi-Oh.png" alt="Yu-Gi-Oh!" style="width:50%">
+            </div>
+          </div>
+
+    </section>
+    </div>
+
+    <section id="socials" class="content">
+        <h2>My Socials</h2>
+        <a href="https://www.facebook.com/dale.ayran/" target="blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/daleayran/" target="blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@blitzfire205" target="blank">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://x.com/BlitzFire19" target="blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/@blitzfire205" target="blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        </a>
+        <a href="https://www.reddit.com/user/BlitzFireGaming/" target="blank">
+          <i class="fa-brands fa-reddit"></i>
+        </a>
+    </section>
+</body>
+
+		<!-- Fontawesome Bundle -->
+		<script src="https://kit.fontawesome.com/cb447a30b0.js" crossorigin="anonymous"></script>
+
+</html>

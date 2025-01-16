@@ -1,0 +1,53 @@
+/*
+	Syntax for CSS
+
+	Selector {
+		property: value;
+		property: value;
+	}
+
+*/
+
+*
+#profile {
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+
+	/*Optional   */
+	border-radius: 50%;
+}
+
+footer {
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px;
+}
+
+.fa-facebook, .fa-instagram, .fa-tiktok, .fa-twitter, .fa-youtube, .fa-reddit {
+		font-size: 25px;
+		color: white;
+		margin: 0 10px 0 10px;
+		
+}
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover, .fa-twitter:hover, .fa-youtube:hover, .fa-reddit:hover {
+		color: red;
+}
+
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+
+
+
